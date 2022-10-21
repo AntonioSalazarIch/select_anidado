@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tv_margin_left">25dp</dimen>
+    <dimen name="tv_margin_second_column_left">650dp</dimen>
+    <dimen name="tv_margin_top">4dp</dimen>
+    <dimen name="tv_margin_parent_top">20dp</dimen>
+    <dimen name="tv_layout_width">160dp</dimen>
+    <dimen name="tv_text_size">18dp</dimen>
+
+    <dimen name="tv_spinner_height">45dp</dimen>
+    <dimen name="tv_spinner_layout_width">180dp</dimen>
+    <dimen name="tv_spinner_marginTop">152dp</dimen>
+    <dimen name="tv_spinner_marginTopSpinn">3dp</dimen>
+
+    <dimen name="sp_layout_width">380dp</dimen>
+    <dimen name="sp_marginTop">140dp</dimen>
+
+    <dimen name="btn_margin_top">560dp</dimen>
+    <dimen name="btn_margin_left">180dp</dimen>
+    <dimen name="btn_margin_right">180dp</dimen>
+    <dimen name="btn_layout_width">280dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="tv_size_layout2">220dp</dimen>
+
+    <dimen name="tv_size_param">420dp</dimen>
+
+    <dimen name="table_size_padding">15dp</dimen>
+
+
+
+</resources>

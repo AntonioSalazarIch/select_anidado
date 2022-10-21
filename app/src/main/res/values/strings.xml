@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Cierre Parametrizado</string>
+
+    <string name="nro_interrupcion">Nro. de Interrupción:</string>
+    <string name="interrupcion"> 118424</string>
+
+    <string name="nro_reclamo">Nro. de Reclamo:</string>
+    <string name="reclamo"> 6025384</string>
+
+    <string name="fec_inicio">Fecha de Inicio: </string>
+    <string name="fec_ini"> 09-06-2022</string>
+
+    <string name="fec_derivacion">Fecha Derivación: </string>
+    <string name="fec_deriv">09-06-2022</string>
+
+    <string name="fec_final">Fecha Final: </string>
+    <string name="fec_fin">09-06-2022</string>
+
+    <string name="hora_inicial">Hora Inicial:</string>
+    <string name="hora_ini"> 11:59</string>
+
+    <string name="hora_derivacion">Hora Derivación:</string>
+    <string name="hora_deriv"> 11:59</string>
+
+    <string name="hora_final">Hora Final:</string>
+    <string name="hora_fin"> 12:59</string>
+
+    <string name="total_horas">Total de horas: </string>
+    <string name="horas">1:45 </string>
+
+    <string name="recepcionado_por">Recepcionado por:</string>
+    <string name="recepcionista">Daniel Quisbert</string>
+
+    <string name="elemento">Elemento: </string>
+    <string name="reles">Reles: </string>
+    <string name="cierre">Cierre: </string>
+
+    <string name="causa">Causa: </string>
+    <string name="causa_interna">Causa Interna: </string>
+    <string name="motivo">Motivo: </string>
+    <string name="observacion">Observación: </string>
+
+
+    <string name="tipo_falla">Tipo de Falla: </string>
+    <string name="codigo_reclamo">Código de Reclamo: </string>
+    <string name="origen">Origen: </string>
+
+    <string name="cierre_parametrizado">Cierre Parametrizado</string>
+
+    <string name="cancelar">CANCELAR</string>
+    <string name="cerrar_reclamo">CERRAR RECLAMO</string>
+    <string name="title_activity_segunda">SegundaActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="siguiente">Siguiente</string>
+
+</resources>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNroInterrupcion"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:layout_marginStart="@dimen/tv_margin_left"
+        android:text="@string/nro_interrupcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInterrupcion"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:text="@string/interrupcion"
+        app:layout_constraintStart_toEndOf="@+id/tvNroInterrupcion"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNroReclamo"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:layout_marginStart="@dimen/tv_margin_left"
+        android:text="@string/nro_reclamo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNroInterrupcion" />
+
+    <TextView
+        android:id="@+id/tvReclamo"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/reclamo"
+        app:layout_constraintStart_toEndOf="@+id/tvNroReclamo"
+        app:layout_constraintTop_toBottomOf="@+id/tvInterrupcion" />
+
+    <TextView
+        android:id="@+id/tvFecInicio"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:text="@string/fec_inicio"
+        app:layout_constraintStart_toEndOf="@+id/tvInterrupcion"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFecIni"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:text="@string/fec_ini"
+        app:layout_constraintStart_toEndOf="@+id/tvFecInicio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFecDerivacion"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/fec_derivacion"
+        app:layout_constraintStart_toEndOf="@+id/tvReclamo"
+        app:layout_constraintTop_toBottomOf="@+id/tvFecInicio" />
+
+    <TextView
+        android:id="@+id/tvFecDeriv"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/fec_deriv"
+        app:layout_constraintStart_toEndOf="@+id/tvFecDerivacion"
+        app:layout_constraintTop_toBottomOf="@+id/tvFecIni" />
+
+    <TextView
+        android:id="@+id/tvFec_final"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/fec_final"
+        app:layout_constraintStart_toEndOf="@+id/tvReclamo"
+        app:layout_constraintTop_toBottomOf="@+id/tvFecDerivacion" />
+
+    <TextView
+        android:id="@+id/tvFecFin"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/fec_fin"
+        app:layout_constraintStart_toEndOf="@+id/tvFec_final"
+        app:layout_constraintTop_toBottomOf="@+id/tvFecDeriv" />
+
+    <TextView
+        android:id="@+id/tvHoraInicial"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:text="@string/hora_inicial"
+        app:layout_constraintStart_toEndOf="@+id/tvFecIni"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHoraDerivacion"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/hora_derivacion"
+        app:layout_constraintStart_toEndOf="@+id/tvFecDeriv"
+        app:layout_constraintTop_toBottomOf="@+id/tvHoraInicial" />
+
+    <TextView
+        android:id="@+id/tvHoraFinal"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/hora_final"
+        app:layout_constraintStart_toEndOf="@+id/tvFecFin"
+        app:layout_constraintTop_toBottomOf="@+id/tvHoraDerivacion" />
+
+    <TextView
+        android:id="@+id/tvHoraIni"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:text="@string/hora_ini"
+        app:layout_constraintStart_toEndOf="@+id/tvHoraInicial"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHoraDeriv"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/hora_deriv"
+        app:layout_constraintStart_toEndOf="@+id/tvHoraDerivacion"
+        app:layout_constraintTop_toBottomOf="@+id/tvHoraIni" />
+
+    <TextView
+        android:id="@+id/tvHoraFin"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/hora_fin"
+        app:layout_constraintStart_toEndOf="@+id/tvHoraFinal"
+        app:layout_constraintTop_toBottomOf="@+id/tvHoraDeriv" />
+
+    <TextView
+        android:id="@+id/tvRecepcionadoPor"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:text="@string/recepcionado_por"
+        app:layout_constraintStart_toEndOf="@+id/tvHoraIni"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotalHoras"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/total_horas"
+        app:layout_constraintStart_toEndOf="@+id/tvHoraDeriv"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecepcionadoPor" />
+
+    <TextView
+        android:id="@+id/tvRecepcionista"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:text="@string/recepcionista"
+        app:layout_constraintStart_toEndOf="@+id/tvRecepcionadoPor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHoras"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/horas"
+        app:layout_constraintStart_toEndOf="@+id/tvTotalHoras"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecepcionista" />
+
+    <TextView
+        android:id="@+id/tvElemento"
+        android:layout_width="@dimen/tv_spinner_layout_width"
+        android:layout_height="@dimen/tv_spinner_height"
+        android:layout_marginStart="@dimen/tv_margin_left"
+        android:layout_marginTop="@dimen/tv_spinner_marginTopSpinn"
+        android:text="@string/elemento"
+        android:textSize="@dimen/tv_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrigen" />
+
+    <Spinner
+        android:id="@+id/spElemento"
+        android:layout_width="@dimen/sp_layout_width"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tvElemento"
+        app:layout_constraintTop_toBottomOf="@+id/spOrigen" />
+
+    <TextView
+        android:id="@+id/tvReles"
+        android:layout_width="@dimen/tv_spinner_layout_width"
+        android:layout_height="@dimen/tv_spinner_height"
+        android:layout_marginStart="@dimen/tv_margin_left"
+        android:layout_marginTop="@dimen/tv_spinner_marginTopSpinn"
+        android:textSize="@dimen/tv_text_size"
+        android:text="@string/reles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvElemento" />
+
+    <Spinner
+        android:id="@+id/spReles"
+        android:layout_width="@dimen/sp_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        app:layout_constraintStart_toEndOf="@+id/tvReles"
+        app:layout_constraintTop_toBottomOf="@+id/spElemento" />
+
+    <TextView
+        android:id="@+id/tvCierre"
+        android:layout_width="@dimen/tv_spinner_layout_width"
+        android:layout_height="@dimen/tv_spinner_height"
+        android:layout_marginStart="@dimen/tv_margin_left"
+        android:layout_marginTop="@dimen/tv_spinner_marginTopSpinn"
+        android:textSize="@dimen/tv_text_size"
+        android:text="@string/cierre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReles" />
+
+    <Spinner
+        android:id="@+id/spCierre"
+        android:layout_width="@dimen/sp_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/tvCierre"
+        app:layout_constraintTop_toBottomOf="@+id/spReles" />
+
+    <TextView
+        android:id="@+id/tvCausa"
+        android:layout_width="@dimen/tv_spinner_layout_width"
+        android:layout_height="@dimen/tv_spinner_height"
+        android:layout_marginStart="@dimen/tv_margin_second_column_left"
+        android:layout_marginTop="@dimen/tv_spinner_marginTop"
+        android:text="@string/causa"
+        android:textSize="@dimen/tv_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCausaInterna"
+        android:layout_width="@dimen/tv_spinner_layout_width"
+        android:layout_height="@dimen/tv_spinner_height"
+        android:layout_marginStart="@dimen/tv_margin_second_column_left"
+        android:layout_marginTop="@dimen/tv_spinner_marginTopSpinn"
+        android:textSize="@dimen/tv_text_size"
+        android:text="@string/causa_interna"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCausa" />
+
+
+    <TextView
+        android:id="@+id/tvTipoFalla"
+        android:layout_width="@dimen/tv_spinner_layout_width"
+        android:layout_height="@dimen/tv_spinner_height"
+        android:layout_marginStart="@dimen/tv_margin_left"
+        android:layout_marginTop="@dimen/tv_spinner_marginTop"
+        android:text="@string/tipo_falla"
+        android:textSize="@dimen/tv_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCodigoReclamo"
+        android:layout_width="@dimen/tv_spinner_layout_width"
+        android:layout_height="@dimen/tv_spinner_height"
+        android:layout_marginStart="@dimen/tv_margin_left"
+        android:layout_marginTop="@dimen/tv_spinner_marginTopSpinn"
+        android:textSize="@dimen/tv_text_size"
+        android:text="@string/codigo_reclamo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipoFalla" />
+
+    <TextView
+        android:id="@+id/tvOrigen"
+        android:layout_width="@dimen/tv_spinner_layout_width"
+        android:layout_height="@dimen/tv_spinner_height"
+        android:layout_marginStart="@dimen/tv_margin_left"
+        android:layout_marginTop="@dimen/tv_spinner_marginTopSpinn"
+        android:textSize="@dimen/tv_text_size"
+        android:text="@string/origen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCodigoReclamo" />
+
+    <Spinner
+        android:id="@+id/spTipoFalla"
+        android:layout_width="@dimen/sp_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sp_marginTop"
+        app:layout_constraintStart_toEndOf="@+id/tvTipoFalla"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spCodigoReclamo"
+        android:layout_width="@dimen/sp_layout_width"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tvCodigoReclamo"
+        app:layout_constraintTop_toBottomOf="@+id/spTipoFalla" />
+
+    <Spinner
+        android:id="@+id/spOrigen"
+        android:layout_width="@dimen/sp_layout_width"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tvOrigen"
+        app:layout_constraintTop_toBottomOf="@+id/spCodigoReclamo" />
+
+    <Spinner
+        android:id="@+id/spCausa"
+        android:layout_width="@dimen/sp_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sp_marginTop"
+        app:layout_constraintStart_toEndOf="@+id/tvCausa"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spCausaInterna"
+        android:layout_width="@dimen/sp_layout_width"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tvCausaInterna"
+        app:layout_constraintTop_toBottomOf="@+id/spCausa" />
+
+
+    <Button
+        android:id="@+id/btCancelar"
+        android:layout_width="@dimen/btn_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/btn_margin_left"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:text="@string/cancelar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btCerrarReclamo"
+        android:layout_width="@dimen/btn_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/btn_margin_right"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:text="@string/cerrar_reclamo"
+        android:onClick="confirmarCerrarReclamo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/siguiente"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="siguienteCierre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

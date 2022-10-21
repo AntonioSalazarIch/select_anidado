@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SegundaActivity">
+
+    <TextView
+        android:id="@+id/tvNroInterrupcion"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:layout_marginStart="@dimen/tv_margin_left"
+        android:text="@string/nro_interrupcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInterrupcion"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:text="@string/interrupcion"
+        app:layout_constraintStart_toEndOf="@+id/tvNroInterrupcion"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNroReclamo"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:layout_marginStart="@dimen/tv_margin_left"
+        android:text="@string/nro_reclamo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNroInterrupcion" />
+
+    <TextView
+        android:id="@+id/tvReclamo"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/reclamo"
+        app:layout_constraintStart_toEndOf="@+id/tvNroReclamo"
+        app:layout_constraintTop_toBottomOf="@+id/tvInterrupcion" />
+
+    <TextView
+        android:id="@+id/tvFecInicio"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:text="@string/fec_inicio"
+        app:layout_constraintStart_toEndOf="@+id/tvInterrupcion"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFecIni"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:text="@string/fec_ini"
+        app:layout_constraintStart_toEndOf="@+id/tvFecInicio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFecDerivacion"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/fec_derivacion"
+        app:layout_constraintStart_toEndOf="@+id/tvReclamo"
+        app:layout_constraintTop_toBottomOf="@+id/tvFecInicio" />
+
+    <TextView
+        android:id="@+id/tvFecDeriv"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/fec_deriv"
+        app:layout_constraintStart_toEndOf="@+id/tvFecDerivacion"
+        app:layout_constraintTop_toBottomOf="@+id/tvFecIni" />
+
+    <TextView
+        android:id="@+id/tvFec_final"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/fec_final"
+        app:layout_constraintStart_toEndOf="@+id/tvReclamo"
+        app:layout_constraintTop_toBottomOf="@+id/tvFecDerivacion" />
+
+    <TextView
+        android:id="@+id/tvFecFin"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/fec_fin"
+        app:layout_constraintStart_toEndOf="@+id/tvFec_final"
+        app:layout_constraintTop_toBottomOf="@+id/tvFecDeriv" />
+
+    <TextView
+        android:id="@+id/tvHoraInicial"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:text="@string/hora_inicial"
+        app:layout_constraintStart_toEndOf="@+id/tvFecIni"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHoraDerivacion"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/hora_derivacion"
+        app:layout_constraintStart_toEndOf="@+id/tvFecDeriv"
+        app:layout_constraintTop_toBottomOf="@+id/tvHoraInicial" />
+
+    <TextView
+        android:id="@+id/tvHoraFinal"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/hora_final"
+        app:layout_constraintStart_toEndOf="@+id/tvFecFin"
+        app:layout_constraintTop_toBottomOf="@+id/tvHoraDerivacion" />
+
+    <TextView
+        android:id="@+id/tvHoraIni"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:text="@string/hora_ini"
+        app:layout_constraintStart_toEndOf="@+id/tvHoraInicial"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHoraDeriv"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/hora_deriv"
+        app:layout_constraintStart_toEndOf="@+id/tvHoraDerivacion"
+        app:layout_constraintTop_toBottomOf="@+id/tvHoraIni" />
+
+    <TextView
+        android:id="@+id/tvHoraFin"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/hora_fin"
+        app:layout_constraintStart_toEndOf="@+id/tvHoraFinal"
+        app:layout_constraintTop_toBottomOf="@+id/tvHoraDeriv" />
+
+    <TextView
+        android:id="@+id/tvRecepcionadoPor"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:text="@string/recepcionado_por"
+        app:layout_constraintStart_toEndOf="@+id/tvHoraIni"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotalHoras"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/total_horas"
+        app:layout_constraintStart_toEndOf="@+id/tvHoraDeriv"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecepcionadoPor" />
+
+    <TextView
+        android:id="@+id/tvRecepcionista"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_parent_top"
+        android:text="@string/recepcionista"
+        app:layout_constraintStart_toEndOf="@+id/tvRecepcionadoPor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHoras"
+        android:layout_width="@dimen/tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:text="@string/horas"
+        app:layout_constraintStart_toEndOf="@+id/tvTotalHoras"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecepcionista" />
+
+    <Spinner
+        android:id="@+id/spMotivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTipoFalla"
+        android:layout_width="@dimen/tv_size_layout2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        android:text="@string/tipo_falla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCodigoReclamo"
+        android:layout_width="@dimen/tv_size_layout2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        android:text="@string/codigo_reclamo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipoFalla" />
+
+    <TextView
+        android:id="@+id/tvOrigen"
+        android:layout_width="@dimen/tv_size_layout2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        android:text="@string/origen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCodigoReclamo" />
+
+    <TextView
+        android:id="@+id/tvElemento"
+        android:layout_width="@dimen/tv_size_layout2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        android:text="@string/elemento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrigen" />
+
+    <TextView
+        android:id="@+id/tvReles"
+        android:layout_width="@dimen/tv_size_layout2"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/reles"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvElemento" />
+
+    <TextView
+        android:id="@+id/tvCierre"
+        android:layout_width="@dimen/tv_size_layout2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        android:text="@string/cierre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReles" />
+
+    <TextView
+        android:id="@+id/tvTipoFalla2"
+        android:layout_width="@dimen/tv_size_param"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tvTipoFalla"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCodigoReclamo2"
+        android:layout_width="@dimen/tv_size_param"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/tvCodigoReclamo"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipoFalla2" />
+
+    <TextView
+        android:id="@+id/tvOrigen2"
+        android:layout_width="@dimen/tv_size_param"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/tvCodigoReclamo"
+        app:layout_constraintTop_toBottomOf="@+id/tvCodigoReclamo2" />
+
+    <TextView
+        android:id="@+id/tvElemento2"
+        android:layout_width="@dimen/tv_size_param"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/tvElemento"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrigen2" />
+
+    <TextView
+        android:id="@+id/tvReles2"
+        android:layout_width="@dimen/tv_size_param"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/tvReles"
+        app:layout_constraintTop_toBottomOf="@+id/tvElemento2" />
+
+    <TextView
+        android:id="@+id/tvCierre2"
+        android:layout_width="@dimen/tv_size_param"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/tvCierre"
+        app:layout_constraintTop_toBottomOf="@+id/tvReles2" />
+
+    <TextView
+        android:id="@+id/tvCausa"
+        android:layout_width="@dimen/tv_size_layout2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginStart="25dp"
+        android:textSize="20sp"
+        android:text="@string/causa"
+        app:layout_constraintStart_toEndOf="@+id/tvTipoFalla2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCausaInterna"
+        android:layout_width="@dimen/tv_size_layout2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:text="@string/causa_interna"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tvCodigoReclamo2"
+        app:layout_constraintTop_toBottomOf="@+id/tvCausa" />
+
+    <TextView
+        android:id="@+id/tvCausa2"
+        android:layout_width="@dimen/tv_size_param"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tvCausa"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCausaInterna2"
+        android:layout_width="@dimen/tv_size_param"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tvCausaInterna"
+        app:layout_constraintTop_toBottomOf="@+id/tvCausa2" />
+
+    <TableLayout
+        android:id="@+id/tableTrafos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintStart_toEndOf="@+id/tvTrafos"
+        app:layout_constraintTop_toBottomOf="@+id/tvCausaInterna2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:id="@+id/Cabecera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/table_size_padding"
+                android:text="Tipo de Uso"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/table_size_padding"
+                android:text="Cia"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/table_size_padding"
+                android:text="Kvas"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/SeparadorCabecera"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/LineaCabecera"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_span="6"
+                android:background="#FFFFFF"></FrameLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Fila1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/table_size_padding"
+                android:text="G" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/table_size_padding"
+                android:text="3521" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/table_size_padding"
+                android:text="100" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Fila2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/table_size_padding"
+                android:text="G" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/table_size_padding"
+                android:text="5559" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/table_size_padding"
+                android:text="25" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvTrafos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="25dp"
+        android:text="TRAFOS: "
+        app:layout_constraintStart_toEndOf="@+id/tvOrigen2"
+        app:layout_constraintTop_toBottomOf="@+id/tvCausaInterna" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
